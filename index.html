@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Eventos en el Navegador</h1>
+      <h4>(Problemas - addEventListener)</h4>
+    </header>
+    <section>
+      <article>
+        <p>
+          Para poder jugar necesitas aceptar los terminos y condiciones
+          <input type="checkbox" id="aceptar" />
+        </p>
+        <br />
+        <div id="opciones">
+          <input
+            type="button"
+            value="Triqui"
+            id="opcion1"
+            class="opcion"
+            onclick="triqui()"
+          />
+          <input
+            type="button"
+            value="Reto"
+            id="opcion2"
+            class="opcion"
+            onclick="reto()"
+          />
+        </div>
+        <div class="mesa" id="contenedor">
+          <input type="button" id="1" class="boton" />
+          <input type="button" id="2" class="boton" />
+          <input type="button" id="3" class="boton" /><br />
+          <input type="button" id="4" class="boton" />
+          <input type="button" id="5" class="boton" />
+          <input type="button" id="6" class="boton" /><br />
+          <input type="button" id="7" class="boton" />
+          <input type="button" id="8" class="boton" />
+          <input type="button" id="9" class="boton" />
+        </div>
+        <span id="jugador" class="jugador"></span>
+      </article>
+    </section>
+    <script src="javascript.js"></script>
+    <footer>Made by Daniels🚀</footer>
+  </body>
+</html>
