@@ -13,14 +13,16 @@ function inicio() {
 }
 
 function acepto() {
+  document.getElementById("mensaje").style.display = "none";
+
   document.getElementById("opcion1").style.display = "inline";
   document.getElementById("opcion2").style.display = "inline";
+  document.getElementById("opciones").style.display = "inline";
 
   document.getElementById("contenedor").style.display = "none";
 }
 function triqui() {
-  document.getElementById("opcion1").style.display = "none";
-  document.getElementById("opcion2").style.display = "none";
+  document.getElementById("opciones").style.display = "none";
 
   document.getElementById("contenedor").style.display = "flex";
 }
@@ -180,4 +182,9 @@ function empate() {
   setTimeout(function () {
     again();
   }, 1000);
+}
+function reto() {
+  document.getElementById("opciones").style.display = "none";
+  document.getElementById("titulo").style.display = "inline";
+  document.getElementById("tablas").style.display = "flex";
 }
